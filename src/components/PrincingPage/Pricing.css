@@ -1,0 +1,21 @@
+.body{
+    color: rgb(255, 240, 245);
+    background-image: url("./satyam2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form{
+    font-size: 30px;
+    font-family: verdana;
+    margin: 100px;
+}
+
+.div{
+    background-color: rgb(228, 222, 222, 0.133);
+    margin: 200px;
+}
+
+.q:hover {
+    color: red;
+}

@@ -1,0 +1,58 @@
+#dashboardAnim1{
+    animation: dashboardAnim1 1s ease 0s 1 normal forwards;
+}
+#dashboardAnim2{
+    animation: dashboardAnim2 1s ease 0s 1 normal forwards;
+}
+#dashboardAnim3{
+    animation: dashboardAnim3 1s ease 0s 1 normal forwards;
+}
+.dashboardMain{
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+.WeeklyActivitySvg{
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+@keyframes dashboardAnim1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes dashboardAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes dashboardAnim3 {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

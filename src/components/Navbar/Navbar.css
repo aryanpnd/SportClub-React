@@ -1,0 +1,135 @@
+#BounceAnimationComponents {
+	animation: NavBarAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes NavBarAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.sticky {
+	position: fixed;
+}
+
+.p-0 {
+	padding: 9px;
+}
+
+.logoAnim{
+	animation: logoAnim 2s ease 0s infinite normal forwards;
+}
+@keyframes logoAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+/* .WebsiteLogo {} */
+
+.logoText {
+	background: radial-gradient(circle farthest-side at bottom right, #AE2BCF 0%, #34BACF 88%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: xx-large;
+}
+
+
+
+
+/* .mainNavber{
+	background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+} */
+.navigations {
+	color: inherit;
+	text-decoration: none;
+}
+
+.navigations {
+	background:
+		linear-gradient(to right,
+			rgba(100, 200, 200, 0),
+			rgba(100, 200, 200, 0)),
+		linear-gradient(to right,
+			rgba(255, 0, 0, 1),
+			rgba(255, 0, 180, 1),
+			rgba(0, 100, 200, 1));
+	background-size: 100% 3px, 0 3px;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+
+.navigations:hover {
+	background-size: 0 3px, 100% 3px;
+}
+.navigations:focus {
+	background-size: 0 3px, 100% 3px;
+}
+
+

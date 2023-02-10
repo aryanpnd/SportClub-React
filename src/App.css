@@ -1,0 +1,84 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+#darkmodeBTN{
+  position: fixed;
+  display: block;
+  z-index: 100;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* ===== Scrollbar CSS ===== */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #36ab3e;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #55ce7d;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #369162;
+}
+::-webkit-scrollbar-track {
+  background: #707070;
+  border: 0px none #ffffff;
+  border-radius: 94px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #636363;
+}
+::-webkit-scrollbar-track:active {
+  background: #626060;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
